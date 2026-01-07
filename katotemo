@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae - Revando Kurniawan Arifin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-color: #f4f7f6;
+            --text-color: #333;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        /* Header Section */
+        .header {
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 40px;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .header img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 5px solid var(--accent-color);
+            object-fit: cover;
+        }
+
+        .header-text h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 1px;
+        }
+
+        .header-text p {
+            margin: 5px 0;
+            font-size: 1.2em;
+            color: #bdc3c7;
+        }
+
+        /* Main Content */
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            padding: 30px;
+            gap: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .content { grid-template-columns: 1fr; }
+            .header { text-align: center; justify-content: center; }
+        }
+
+        h2 {
+            border-left: 5px solid var(--accent-color);
+            padding-left: 15px;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        /* Sidebar Style */
+        .sidebar-section { margin-bottom: 30px; }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .contact-item i { color: var(--accent-color); width: 20px; }
+
+        /* Timeline / Achievement Style */
+        .achievement-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .achievement-item {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 20px;
+        }
+
+        .achievement-item::before {
+            content: "\f058"; /* FontAwesome Check Circle */
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+        }
+
+        /* Buttons */
+        .btn-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .btn {
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: 0.3s;
+        }
+
+        .btn-insta { background: #e1306c; color: white; }
+        .btn-drive { background: #1da1f2; color: white; }
+        .btn:hover { opacity: 0.8; transform: translateY(-2px); }
+
+        .about-text { text-align: justify; }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header class="header">
+        <img src="katotemo.jpeg" alt="Revando Kurniawan Arifin">
+        <div class="header-text">
+            <h1>Revando Kurniawan A.</h1>
+            <p>Pelajar & Inovator Muda</p>
+            <div class="btn-group">
+                <a href="https://www.instagram.com/katotemo__?igsh=MXQyYjhoODY3Ym1leA==" class="btn btn-insta" target="_blank">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="https://drive.google.com/drive/folders/1kA64CLBm85KXXkSufjCa0fCCOzXd4zuG" class="btn btn-drive" target="_blank">
+                    <i class="fab fa-google-drive"></i> Portfolio
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="sidebar">
+            <div class="sidebar-section">
+                <h2>Kontak</h2>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>082269250615</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Perumahan II PT.GMP, Lampung Tengah</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-birthday-cake"></i>
+                    <span>14 Januari 2007</span>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h2>Keahlian & Hobi</h2>
+                <p>
+                    <i class="fas fa-futbol"></i> Sepak Bola / Futsal<br>
+                    <i class="fas fa-table-tennis"></i> Tenis Meja<br>
+                    <i class="fas fa-microchip"></i> Basic Electronics (R&D)<br>
+                    <i class="fas fa-plane"></i> Traveling / Healing
+                </p>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <section class="sidebar-section">
+                <h2>Tentang Saya</h2>
+                <p class="about-text">
+                    Laki-laki bersuku Jawa yang lahir di Lampung Tengah. Saya adalah pribadi yang disiplin, tidak mudah menyerah, dan sangat menyukai tantangan baru. Memiliki latar belakang pendidikan yang kuat di bidang sosiologi dan fisika, serta berpengalaman dalam kepemimpinan organisasi dan inovasi teknologi tepat guna.
+                </p>
+            </section>
+
+            <section class="sidebar-section">
+                <h2>Pendidikan</h2>
+                <div class="achievement-item">
+                    <strong>SMA Gunung Madu</strong><br>
+                    Lulusan Periode 2025 - 2026<br>
+                    <small>Fokus Mata Pelajaran: Sosiologi & Fisika</small>
+                </div>
+            </section>
+
+            <section class="sidebar-section">
+                <h2>Pencapaian & Pengalaman</h2>
+                <div class="achievement-list">
+                    <div class="achievement-item">
+                        <strong>Inovator: Alarm Suhu Lab R&D</strong>
+                        <p>Berhasil merancang alat deteksi suhu untuk membantu operasional Lab RND.</p>
+                    </div>
+                    <div class="achievement-item">
+                        <strong>Danpok Pasukan 8 - Paskibra PT.GMP</strong>
+                        <p>Menjadi bagian penting dalam upacara pengibaran bendera periode 2024-2025.</p>
+                    </div>
+                    <div class="achievement-item">
+                        <strong>Ketua Ambalan (2024-2025)</strong>
+                        <p>Memimpin organisasi kepramukaan dengan tanggung jawab tinggi.</p>
+                    </div>
+                    <div class="achievement-item">
+                        <strong>Juara Futsal Kabupaten</strong>
+                        <p>Menjuarai kompetisi tingkat SMP sebagai penjaga gawang (kiper).</p>
+                    </div>
+                    <div class="achievement-item">
+                        <strong>Juara Lomba Hadroh</strong>
+                        <p>Berprestasi dalam bidang seni religi di Yayasan Gunung Madu (YGM).</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
